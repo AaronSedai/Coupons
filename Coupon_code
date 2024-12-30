@@ -1,0 +1,17 @@
+# write a program that asks the user to enter the original price of an item, the discount percentage,
+# and then calculate and display the new price.
+
+def discount():
+    price = float(input("Enter the original price: "))
+    coupon = int(input("Enter the discount percentage (without the percent sign): "))
+    couponPercent = coupon / 100
+    total = price - (price * couponPercent)
+    saved = price * couponPercent
+    print("The original price was", "${:.2f}".format(price))
+    print("The discount percentage was", coupon, "percent.")
+    print("")
+    print("The new price is", "${:.2f}".format(total))
+    print("You saved", "${:.2f}".format(saved))
+
+  // call the function
+discount()
